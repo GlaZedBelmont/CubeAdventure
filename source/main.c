@@ -94,9 +94,13 @@ int main(int argc, char **argv)
 			loadlevel("romfs:/test.txt");
 			consoleInit(GFX_BOTTOM, NULL);
 			}
-			if (selection == 2) {
+			if (selection == 1) {
+			makeselection = false;
+			callset();
 			consoleInit(GFX_BOTTOM, NULL);
-			printf("L2 Not implemented yet. Go yell at meme or something"); }
+			loadlevel("romfs:/lvl2.txt");
+			consoleInit(GFX_BOTTOM, NULL);
+			}
 			if (selection == 3) {
 			consoleInit(GFX_BOTTOM, NULL);
 			printf("L3 Not implemented yet. Go yell at meme or something"); }
