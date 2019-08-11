@@ -164,6 +164,7 @@ C2D_Image backgroundimg(int backtype){
 char* musicget(int musictype){
 	char* temp = "";
 	if (musictype == 1) temp = "romfs:/arcade_thequest.mp3";
+	if (musictype == 2) temp = "romfs:/lvl2.mp3";
 	return temp;
 }
 
